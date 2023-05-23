@@ -1,14 +1,13 @@
-import { styled } from "styled-components";
-
-const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-`
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "./pages/Main";
 
 function App() {
   return (
-    <Container>
-    </Container>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

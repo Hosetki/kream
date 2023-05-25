@@ -23,11 +23,11 @@ const Header =()=>{
                 </S.Rigth>
             </S.HeaderBody>
             <S.Tabs>
-                <S.Tab_Name>추천</S.Tab_Name>
-                <S.Tab_Name>랭킹</S.Tab_Name>
-                <S.Tab_Name>남성</S.Tab_Name>
-                <S.Tab_Name>여성</S.Tab_Name>
-                <S.Tab_Name>브랜드</S.Tab_Name>
+                <S.Tab_Name><Link to="/">추천</Link></S.Tab_Name>
+                <S.Tab_Name><Link to="/rank">랭킹</Link></S.Tab_Name>
+                <S.Tab_Name><Link to="/mens">남성</Link></S.Tab_Name>
+                <S.Tab_Name><Link to="/girls">여성</Link></S.Tab_Name>
+                <S.Tab_Name><Link to="/brand">브랜드</Link></S.Tab_Name>
             </S.Tabs>
         </S.Container>
     )

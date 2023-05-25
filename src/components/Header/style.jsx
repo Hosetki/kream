@@ -58,11 +58,25 @@ export const R_Link = styled.h1`
 export const Tabs = styled.div`
     width: 100%;
     height: 44px;
-    background-color: #e1e1e1;
     display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 0 40px;
 `
 
 export const Tab_Name = styled.div`
     font-size: 16px;
     line-height: 1.25;
+    padding: 0px 40px;
+    border-bottom: 2px solid #222;
+    height: 100%;
+    padding: 0 ;
+    display: flex;
+    align-items: center;
+    font-weight: 700px;
+    a{
+        color: black;
+        text-decoration: none;
+    }
 `

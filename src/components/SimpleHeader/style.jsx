@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 export const Container = styled.div`
     width: 100vw;
     height: 130px;
-    box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
     padding: 0 95px;
     box-sizing: border-box;
     position: fixed;
@@ -51,32 +50,6 @@ export const Rigth = styled.div`
 export const R_Link = styled.h1`
     font-size: 18px;
     font-weight: 400;
-    a{
-        color: black;
-        text-decoration: none;
-    }
-`
-
-export const Tabs = styled.div`
-    width: 100%;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    gap: 20px;
-    padding: 0 40px;
-`
-
-export const Tab_Name = styled.div`
-    font-size: 16px;
-    line-height: 1.25;
-    padding: 0px 40px;
-    border-bottom: 2px solid #222;
-    height: 100%;
-    padding: 0 ;
-    display: flex;
-    align-items: center;
-    font-weight: 700px;
     a{
         color: black;
         text-decoration: none;

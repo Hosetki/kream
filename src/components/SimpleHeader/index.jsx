@@ -3,7 +3,7 @@ import * as S from "./style"
 import Logo from "../../assets/logo.svg"
 import { FiSearch } from 'react-icons/fi';
 
-const Header =()=>{
+const SimpleHeader =()=>{
     return(
         <S.Container>
             <S.Nav>
@@ -22,15 +22,8 @@ const Header =()=>{
                     <S.R_Link><Link to="/search"><FiSearch style={{width: "28px", height: "28px"}} /></Link></S.R_Link>
                 </S.Rigth>
             </S.HeaderBody>
-            <S.Tabs>
-                <S.Tab_Name><Link to="/">추천</Link></S.Tab_Name>
-                <S.Tab_Name><Link to="/rank">랭킹</Link></S.Tab_Name>
-                <S.Tab_Name><Link to="/mens">남성</Link></S.Tab_Name>
-                <S.Tab_Name><Link to="/girls">여성</Link></S.Tab_Name>
-                <S.Tab_Name><Link to="/brand">브랜드</Link></S.Tab_Name>
-            </S.Tabs>
         </S.Container>
     )
 }
 
-export default Header
+export default SimpleHeader

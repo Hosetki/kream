@@ -18,7 +18,6 @@ const SimpleHeader =()=>{
                     <S.R_Link><Link to="/">HOME</Link></S.R_Link>
                     <S.R_Link><Link to="/social">STYLE</Link></S.R_Link>
                     <S.R_Link><Link to="/search">SHOP</Link></S.R_Link>
-                    <S.R_Link><Link to="/my">MY</Link></S.R_Link>
                     <S.R_Link><Link to="/search"><FiSearch style={{width: "28px", height: "28px"}} /></Link></S.R_Link>
                 </S.Rigth>
             </S.HeaderBody>

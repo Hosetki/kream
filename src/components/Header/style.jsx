@@ -45,12 +45,12 @@ export const Rigth = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 45px;
+    gap: 40px;
 `
 
 export const R_Link = styled.h1`
     font-size: 18px;
-    font-weight: 400;
+    font-weight: ${({ isActive }) => (isActive ? 800 : 400)};
     a{
         color: black;
         text-decoration: none;
@@ -71,7 +71,8 @@ export const Tab_Name = styled.div`
     font-size: 16px;
     line-height: 1.25;
     padding: 0px 40px;
-    border-bottom: 2px solid #222;
+    /* border-bottom: 2px solid #222; */
+    border-bottom: ${({ currentSlider }) => (currentSlider ? "2px solid #222" : "none")};
     height: 100%;
     padding: 0 ;
     display: flex;

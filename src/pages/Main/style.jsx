@@ -29,6 +29,16 @@ export const Cards = styled.div`
 export const Card = styled.div`
     width: 233px;
     height: 100px;
+    background-image: url(${props => props.image});
     border-radius: 10px;
     background-color: blue;
+    background-size: cover;
+    cursor: pointer;
+`
+
+export const CardTitle = styled.p`
+    font-size: 15px;
+    letter-spacing: -.15px;
+    color: #333;
+    margin-top: 8px;
 `

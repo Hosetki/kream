@@ -1,7 +1,8 @@
-import Footer from "../../components/Footer"
-import Header from "../../components/Header"
-import Slider from "../../components/Slider"
-import * as S from "./style"
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import Slider from "../../components/Slider";
+import { cardData } from "../../data/card";
+import * as S from "./style";
 
 const Main = () => {
     return (
@@ -11,24 +12,26 @@ const Main = () => {
                 <Slider></Slider>
                 <S.ShortCut>
                     <S.Cards>
-                        <S.Card></S.Card>
-                        <S.Card></S.Card>
-                        <S.Card></S.Card>
-                        <S.Card></S.Card>
-                        <S.Card></S.Card>
+                        {cardData.slice(0, 5).map((card, index) => (
+                            <div key={index} style={{display: "flex",flexDirection: "column",alignItems: "center",}}>
+                                <S.Card image={card.image} />
+                                <S.CardTitle>{card.title}</S.CardTitle>
+                            </div>
+                        ))}
                     </S.Cards>
                     <S.Cards>
-                        <S.Card></S.Card>
-                        <S.Card></S.Card>
-                        <S.Card></S.Card>
-                        <S.Card></S.Card>
-                        <S.Card></S.Card>
+                        {cardData.slice(5, 10).map((card, index) => (
+                            <div key={index} style={{display: "flex",flexDirection: "column",alignItems: "center",}}>
+                                <S.Card image={card.image} />
+                                <S.CardTitle>{card.title}</S.CardTitle>
+                            </div>
+                        ))}
                     </S.Cards>
                 </S.ShortCut>
             </S.Container>
             <Footer />
         </>
-    )
-}
+    );
+};
 
 export default Main;

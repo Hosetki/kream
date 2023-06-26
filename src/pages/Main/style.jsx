@@ -9,13 +9,12 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    gap: 50px;
+    gap: 40px;
 `
 
 export const ShortCut = styled.div`
     width: 100%;
     height: 270px;
-    background-color: #e1e1e1;
 `
 
 export const Cards = styled.div`
@@ -41,4 +40,35 @@ export const CardTitle = styled.p`
     letter-spacing: -.15px;
     color: #333;
     margin-top: 8px;
+`
+
+export const Horz = styled.div`
+    max-width: 1200px;
+    margin: 28px auto 20px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ebebeb;
+`
+
+export const HomeProduct = styled.div`
+    width: 100%;
+    height: 570px;
+    background-color: #e1e1e1;
+`
+
+export const ProductTitle = styled.h1`
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+`
+
+export const ProductSubTitle = styled.p`
+    margin-top: 2px;
+    font-size: 16px;
+    color: rgba(34,34,34,.5);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 262px;
 `

@@ -6,7 +6,7 @@ import * as S from "./style";
 
 const Main = () => {
     return (
-        <>
+        <div style={{display:"flex", alignItems: "center", flexDirection: "column"}}>
             <Header />
             <S.Container>
                 <Slider></Slider>
@@ -28,9 +28,14 @@ const Main = () => {
                         ))}
                     </S.Cards>
                 </S.ShortCut>
+                <S.Horz></S.Horz>
+                <S.HomeProduct>
+                    <S.ProductTitle>Just Dropped</S.ProductTitle>
+                    <S.ProductSubTitle>발매 상품</S.ProductSubTitle>
+                </S.HomeProduct>
             </S.Container>
             <Footer />
-        </>
+        </div>
     );
 };
 

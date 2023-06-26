@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const Container = styled.div`
     width: 294px;
     height: 350px;
+    margin-bottom: 30px;
 `
 
 export const ProductImg = styled.div`
@@ -11,12 +12,13 @@ export const ProductImg = styled.div`
     border-radius: 8px;
     background-image: url(${props => props.image});
     background-size: cover;
-    background-color: red;
+    background-color: rgb(242,242,242);
 `
 
 export const ProductTitle = styled.h2`
     font-size: 13px;
     font-weight: 700;
+    margin-top: 5px;
     color: #222;
     white-space: nowrap;
     text-overflow: ellipsis;

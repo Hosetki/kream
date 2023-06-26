@@ -54,7 +54,6 @@ export const Horz = styled.div`
 export const HomeProduct = styled.div`
     width: 100%;
     height: 570px;
-    background-color: #e1e1e1;
 `
 
 export const ProductTitle = styled.h1`
@@ -65,6 +64,7 @@ export const ProductTitle = styled.h1`
 
 export const ProductSubTitle = styled.p`
     margin-top: 2px;
+    margin-bottom: 5px;
     font-size: 16px;
     color: rgba(34,34,34,.5);
     overflow: hidden;
@@ -77,5 +77,14 @@ export const Products = styled.div`
     display: flex;
     width: 100%;
     gap: 8px;
-    background-image: url()
+`
+
+export const ViewMore = styled.button`
+    border: 1px solid #d3d3d3;
+    color: rgba(34,34,34,.8);
+    width: 100px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: rgb(255,255,255);
+    cursor: pointer;
 `

@@ -72,3 +72,10 @@ export const ProductSubTitle = styled.p`
     white-space: nowrap;
     max-width: 262px;
 `
+
+export const Products = styled.div`
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    background-image: url()
+`

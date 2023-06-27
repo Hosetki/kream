@@ -8,6 +8,7 @@ const SimpleHeader =()=>{
         <S.Container>
             <S.Nav>
                 <Link to="/notice">고객센터</Link>
+                <Link to="/mypage">마이페이지</Link>
                 <Link to="/my/wish">관심상품</Link>
                 <a>알림</a>
                 <a>로그인</a>

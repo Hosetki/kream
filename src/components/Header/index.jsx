@@ -12,7 +12,7 @@ const Header = () => {
                 <Link to="/my/wish">마이페이지</Link>
                 <Link to="/my/wish">관심상품</Link>
                 <a>알림</a>
-                <a>로그아웃</a>
+                <Link to="/login">로그인</Link>
             </S.Nav>
             <S.HeaderBody>
                 <Link to="/"><S.Logo src={Logo} /></Link>

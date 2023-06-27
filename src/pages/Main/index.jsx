@@ -6,8 +6,10 @@ import Slider from "../../components/Slider";
 import { cardData } from "../../data/card";
 import { productData, popularData } from "../../data/product";
 import { brandData } from "../../data/brand"
+import { styleData } from "../../data/styles"
 import * as S from "./style";
 import banner01 from "../../assets/banner/banner01.webp"
+import StyleCard from "../../components/StyleCard";
 
 const Main = () => {
     const [more, setMore] = useState(false);
@@ -136,7 +138,15 @@ const Main = () => {
                     }
                 </S.HomeProduct>
                 <S.HomeProduct>
-                    <S.ProductTitle>비 와도 패션은 맑음! #장마철코디</S.ProductTitle>
+                    <S.ProductTitle style={{marginBottom: "10px"}}>비 와도 패션은 맑음! #장마철코디</S.ProductTitle>
+                    <S.Styles>
+                        {styleData.map((style, index) => (
+                            <StyleCard 
+                                profile = {style.profile}
+                                background = {style.background}
+                            />
+                        ))}
+                    </S.Styles>
                 </S.HomeProduct>
             </S.Container>
             <Footer />

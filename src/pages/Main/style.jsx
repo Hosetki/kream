@@ -98,3 +98,9 @@ export const Brands = styled.div`
 export const Banner = styled.img`
     width: 100vw;
 `
+
+export const Styles = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+`

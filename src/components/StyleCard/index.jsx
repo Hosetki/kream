@@ -1,10 +1,10 @@
-import React from 'react';
+import * as S from "./style"
 
-const StyleCard = () => {
+const StyleCard = (props) => {
     return (
-        <div>
-            
-        </div>
+        <S.Container back={props.background}>
+            <S.Profile profile={props.profile}></S.Profile>
+        </S.Container>
     );
 };
 

@@ -1,13 +1,13 @@
-import card01 from "./../assets/card01.webp";
-import card02 from "./../assets/card02.webp";
-import card03 from "./../assets/card03.webp";
-import card04 from "./../assets/card04.webp";
-import card05 from "./../assets/card05.webp";
-import card06 from "./../assets/card06.webp";
-import card07 from "./../assets/card07.webp";
-import card08 from "./../assets/card08.webp";
-import card09 from "./../assets/card09.webp";
-import card10 from "./../assets/card10.webp";
+import card01 from "./../assets/card/card01.webp";
+import card02 from "./../assets/card/card02.webp";
+import card03 from "./../assets/card/card03.webp";
+import card04 from "./../assets/card/card04.webp";
+import card05 from "./../assets/card/card05.webp";
+import card06 from "./../assets/card/card06.webp";
+import card07 from "./../assets/card/card07.webp";
+import card08 from "./../assets/card/card08.webp";
+import card09 from "./../assets/card/card09.webp";
+import card10 from "./../assets/card/card10.webp";
 
 export const cardData = [
   {

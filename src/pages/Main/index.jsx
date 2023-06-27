@@ -5,7 +5,9 @@ import Product from "../../components/Product";
 import Slider from "../../components/Slider";
 import { cardData } from "../../data/card";
 import { productData } from "../../data/product";
+import { brandData } from "../../data/brand"
 import * as S from "./style";
+import banner01 from "../../assets/banner/banner01.webp"
 
 const Main = () => {
     const [more, setMore] = useState(false);
@@ -64,8 +66,46 @@ const Main = () => {
                                     price={product.price}
                                 />
                             ))}
-                        </S.Products><S.Horz style={{ marginBottom: "100px" }} /> </> : ""
+                        </S.Products><S.Horz /> </> : <></>
                     }
+                </S.HomeProduct>
+                <S.HomeProduct>
+                    <S.ProductTitle>Brand Focus</S.ProductTitle>
+                    <S.ProductSubTitle>추천 브랜드</S.ProductSubTitle>
+                    <S.Brands>
+                        {
+                            brandData.slice(0, 5).map((brand, index) => (
+                                <div key={index} style={{ display: "flex", flexDirection: "column", alignItems: "center", }}>
+                                    <S.Card image={brand.image} />
+                                    <S.CardTitle>{brand.title}</S.CardTitle>
+                                </div>
+                            ))
+                        }
+                    </S.Brands>
+                    <S.Brands>
+                        {
+                            brandData.slice(5, 10).map((brand, index) => (
+                                <div key={index} style={{ display: "flex", flexDirection: "column", alignItems: "center", }}>
+                                    <S.Card image={brand.image} />
+                                    <S.CardTitle>{brand.title}</S.CardTitle>
+                                </div>
+                            ))
+                        }
+                    </S.Brands>
+                    <S.Brands>
+                        {
+                            brandData.slice(10, 15).map((brand, index) => (
+                                <div key={index} style={{ display: "flex", flexDirection: "column", alignItems: "center", }}>
+                                    <S.Card image={brand.image} />
+                                    <S.CardTitle>{brand.title}</S.CardTitle>
+                                </div>
+                            ))
+                        }
+                    </S.Brands>
+                </S.HomeProduct>
+                <S.Banner src={banner01} />
+                <S.HomeProduct>
+                    <S.ProductTitle>Most Popular</S.ProductTitle>
                 </S.HomeProduct>
             </S.Container>
             <Footer />

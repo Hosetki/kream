@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: 300vh;
+    height: 600vh;
     padding: 120px 150px;
     display: flex;
     flex-direction: column;
@@ -53,7 +53,6 @@ export const Horz = styled.div`
 
 export const HomeProduct = styled.div`
     width: 100%;
-    height: 570px;
 `
 
 export const ProductTitle = styled.h1`
@@ -87,4 +86,15 @@ export const ViewMore = styled.button`
     border-radius: 10px;
     background-color: rgb(255,255,255);
     cursor: pointer;
+`
+
+export const Brands = styled.div`
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin: 0;
+`
+
+export const Banner = styled.img`
+    width: 100vw;
 `

@@ -13,6 +13,7 @@ export const ProductImg = styled.div`
     background-image: url(${props => props.image});
     background-size: cover;
     background-color: rgb(242,242,242);
+    cursor: pointer;
 `
 
 export const ProductTitle = styled.h2`

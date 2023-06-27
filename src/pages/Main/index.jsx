@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import Product from "../../components/Product";
 import Slider from "../../components/Slider";
 import { cardData } from "../../data/card";
-import { productData } from "../../data/product";
+import { productData, popularData } from "../../data/product";
 import { brandData } from "../../data/brand"
 import * as S from "./style";
 import banner01 from "../../assets/banner/banner01.webp"
@@ -105,7 +105,38 @@ const Main = () => {
                 </S.HomeProduct>
                 <S.Banner src={banner01} />
                 <S.HomeProduct>
-                    <S.ProductTitle>Most Popular</S.ProductTitle>
+                    <S.ProductTitle>Just Dropped</S.ProductTitle>
+                    <S.ProductSubTitle>발매 상품</S.ProductSubTitle>
+                    <S.Products>
+                        {popularData.slice(0, 4).map((popular, index) => (
+                            <Product
+                                image={popular.image}
+                                color={popular.color}
+                                brand={popular.brand}
+                                name={popular.name}
+                                price={popular.price}
+                            />
+                        ))}
+                    </S.Products>
+                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "40px" }}>
+                        {!more ? <><S.ViewMore onClick={toggleMore}>더보기</S.ViewMore><S.Horz /></> : null}
+                    </div>
+                    {
+                        more ? <><S.Products>
+                            {popularData.slice(4, 8).map((product, index) => (
+                                <Product
+                                    image={product.image}
+                                    color={product.color}
+                                    brand={product.brand}
+                                    name={product.name}
+                                    price={product.price}
+                                />
+                            ))}
+                        </S.Products><S.Horz /> </> : <></>
+                    }
+                </S.HomeProduct>
+                <S.HomeProduct>
+                    <S.ProductTitle>비 와도 패션은 맑음! #장마철코디</S.ProductTitle>
                 </S.HomeProduct>
             </S.Container>
             <Footer />

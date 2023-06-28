@@ -9,6 +9,8 @@ export const Container = styled.div`
 export const ProductImg = styled.div`
     width: 100%;
     height: 294px;
+    padding: 8px;
+    box-sizing: border-box;
     border-radius: 8px;
     background-image: url(${props => props.image});
     background-size: cover;
@@ -49,4 +51,15 @@ export const RightNow = styled.p`
     font-size: 11px;
     color: rgba(34,34,34,.5);
     margin-top: 2px;
+`
+
+export const Rank = styled.div`
+    width: 26px;
+    height: 26px;
+    background-color: rgb(100, 106, 118);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
 `

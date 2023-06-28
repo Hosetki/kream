@@ -6,12 +6,17 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     padding-top: 145px;
+
 `
 
-export const LoginTitle = styled.img`
+export const SignUpTitle = styled.h2`
     width: 250px;
     height: 56px;
     margin-bottom: 60px;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: -.48px;
+    color: #000;
 `
 
 export const InputArea = styled.div`
@@ -20,6 +25,22 @@ export const InputArea = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    a{
+         width: 100%;
+        font-size: 16px;
+        height: 52px;
+        cursor: pointer;
+        font-weight: 700;
+        color: #fff;
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 12px;
+        margin-top: 12px;
+        text-decoration: none;
+    }
 `
 
 export const InputTitle = styled.h3`
@@ -75,13 +96,6 @@ export const LoginBtn = styled.button`
     border: none;
     border-radius: 12px;
     margin-top: 12px;
-     a{
-        text-align: center;
-        font-size: 13px;
-        letter-spacing: -.07px;
-        text-decoration: none;
-        color: white;
-    }
 `
 
 export const SignUp = styled.div`

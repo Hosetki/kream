@@ -9,6 +9,7 @@ import { brandData } from "../../data/brand"
 import { styleData } from "../../data/styles"
 import * as S from "./style";
 import banner01 from "../../assets/banner/banner01.webp"
+import banner02 from "../../assets/banner/banner02.webp"
 import StyleCard from "../../components/StyleCard";
 
 const Main = () => {
@@ -148,6 +149,7 @@ const Main = () => {
                         ))}
                     </S.Styles>
                 </S.HomeProduct>
+                <S.Banner src={banner02}/>
             </S.Container>
             <Footer />
         </div>

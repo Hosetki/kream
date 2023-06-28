@@ -11,9 +11,8 @@ export const ImgArea = styled.div`
 `;
 
 export const Image = styled.img`
-  position: absolute;
-  height: 460px;
-  opacity: ${(props) => (props.current ? 0 : 1)};
+  width: 100%;
+  height: 100%;
   transition: ease-in-out 1s;
 `;
 

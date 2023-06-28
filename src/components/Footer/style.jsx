@@ -1,6 +1,12 @@
 import {styled} from "styled-components";
 
 export const Container = styled.div`
+    width: 1280px;
+    height: 546px;
+    bottom: 0;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    border-top: 1px solid #e1e1e1;
   width: 100%;
   height: 546px;
   bottom: 0;
@@ -52,35 +58,4 @@ export const ServiceTitle = styled.div`
     display: inline-block;
     align-items: center;
     font-size: 16px;
-    letter-spacing: -.16px;
-    font-weight: 700
-    `
-
-export const ServiceDetail = styled.div`
-  max-width: 312px;
-  line-height: 16px;
-  padding-top: 3px;
-  font-size: 14px;
-  color: gray;
-  
-`
-
-export const ServiceButton = styled.div`
-    background: black;
-  color: white;
-  text-align: center;
-  width: 96px;
-  height: 34px;
-  font-size: 13px;
-  font-weight: 800;
-  align-items: center;
-  line-height: 34px;
-  padding: 2px;
-`
-
-export const CustomerService = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  justify-content: start;
 `

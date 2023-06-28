@@ -1,5 +1,4 @@
 import * as S from "./style"
-import product01 from "../../assets/products/product01.webp"
 
 const Product = (props) => {
     console.log(props.color)

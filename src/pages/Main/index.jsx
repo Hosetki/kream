@@ -19,7 +19,7 @@ const Main = () => {
     }, []);
     return (
         <div style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
-            <Header />
+            <Header/>
             <S.Container>
                 <Slider></Slider>
                 <S.ShortCut>
@@ -151,7 +151,7 @@ const Main = () => {
                 </S.HomeProduct>
                 <S.Banner src={banner02}/>
             </S.Container>
-            <Footer />
+            <Footer/>
         </div>
     );
 };

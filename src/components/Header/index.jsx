@@ -28,7 +28,7 @@ const Header = () => {
                 <S.Tab_Name currentSlider={location.pathname === "/rank"}><Link to="/rank">랭킹</Link></S.Tab_Name>
                 <S.Tab_Name currentSlider={location.pathname === "/mens"}><Link to="/mens">남성</Link></S.Tab_Name>
                 <S.Tab_Name currentSlider={location.pathname === "/girls"}><Link to="/girls">여성</Link></S.Tab_Name>
-                <S.Tab_Name currentSlider={location.pathname === "/brand"}><Link to="/brand">브랜드</Link></S.Tab_Name>
+                <S.Tab_Name currentSlider={location.pathname === "/brand"}><Link to="/brand">발견</Link></S.Tab_Name>
             </S.Tabs>
         </S.Container>
     )

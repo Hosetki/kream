@@ -11,6 +11,7 @@ import { styleData } from "../../data/styles";
 import * as S from "./style";
 import banner01 from "../../assets/banner/banner01.webp";
 import banner02 from "../../assets/banner/banner02.webp";
+import MainSlider from "../../components/Slider";
 
 const Main = () => {
   const [more, setMore] = useState(false);
@@ -59,7 +60,7 @@ const Main = () => {
     <div style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
       <Header />
       <S.Container>
-        <Slider />
+        <S.Banner src={banner01}/>
         <S.ShortCut>
           <S.Cards>{renderCardItems(0, 5)}</S.Cards>
           <S.Cards>{renderCardItems(5, 10)}</S.Cards>

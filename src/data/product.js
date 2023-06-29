@@ -16,6 +16,15 @@ import popular06 from "../assets/popular/popular06.webp"
 import popular07 from "../assets/popular/popular07.webp"
 import popular08 from "../assets/popular/popular08.webp"
 
+import new01 from "../assets/newIn/new01.webp"
+import new02 from "../assets/newIn/new02.webp"
+import new03 from "../assets/newIn/new03.webp"
+import new04 from "../assets/newIn/new04.webp"
+import new05 from "../assets/newIn/new05.webp"
+import new06 from "../assets/newIn/new06.webp"
+import new07 from "../assets/newIn/new07.webp"
+import new08 from "../assets/newIn/new08.webp"
+
 export const productData = [
     {
         image: product01,
@@ -134,3 +143,53 @@ export const popularData = [
       price: "178,000",
     },
   ];
+
+export const newInData = [
+  {
+    image: new01,
+    brand: "Jansport",
+    name: "Jansport Half Pint Mini Backpack Loden Frost",
+    price: "73,000"
+  },
+  {
+    image: new02,
+    brand: "Baracuta",
+    name: "Baracuta G9 Harrington Jacket Natural",
+    price: "359,000"
+  },
+  {
+    image: new03,
+    brand: "Laarvee",
+    name: "Laarvee PEA001 Sliver Precision Steel Black Bezel Black Dial",
+    price: "2,100,000"
+  },
+  {
+    image: new04,
+    brand: "The Museum Visitor",
+    name: "[Pre-Order] The Museum Visitor Star Damaged Denim Half Shirts Light Blue",
+    price: "184,500"
+  },
+  {
+    image: new05,
+    brand: "Salomon",
+    name: "Salomon Trailblazer 20 Black",
+    price: "95,000"
+  },
+  {
+    image: new06,
+    brand: "Hysteric Glamour",
+    name: "Hysteric Glamour x P.A.M Alien Girl Mesh Cap Black",
+  },
+  {
+    image: new07,
+    brand: "Damiani",
+    name: "Damiani Belle Epoque Diamonds Necklace White Gold",
+    price: "9,690,000"
+  },
+  {
+    image: new08,
+    brand: "Bulgari",
+    name: "Bulgari Divas Dream Necklace Rose Gold Mother of Pearl Diamond",
+    price: "2,849,000"
+  },
+]

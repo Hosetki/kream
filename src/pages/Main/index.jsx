@@ -5,7 +5,7 @@ import Product from "../../components/Product";
 import Slider from "../../components/Slider";
 import StyleCard from "../../components/StyleCard";
 import { cardData } from "../../data/card";
-import { productData, popularData } from "../../data/product";
+import { productData, popularData, newInData } from "../../data/product";
 import { brandData } from "../../data/brand";
 import { styleData } from "../../data/styles";
 import * as S from "./style";
@@ -116,6 +116,24 @@ const Main = () => {
           <S.Styles>{renderStyleCards()}</S.Styles>
         </S.HomeProduct>
         <S.Banner src={banner02} />
+        <S.HomeProduct>
+            <S.ProductTitle>New In</S.ProductTitle>
+            <S.ProductSubTitle>신규 등록 상품</S.ProductSubTitle>
+            <S.Products>{renderProductItems(newInData.slice(0,4))}</S.Products>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "40px" }}>
+            {!more && (
+              <>
+                <S.ViewMore onClick={toggleMore}>더보기</S.ViewMore>
+                <S.Horz />
+              </>
+            )}
+          </div>
+          {more && (
+            <>
+              <S.Products>{renderProductItems(newInData.slice(4, 8))}</S.Products>
+            </>
+          )}
+        </S.HomeProduct>
       </S.Container>
       <Footer />
     </div>
